@@ -24,7 +24,8 @@ jobs:
           cd /domains &&
           cd /mjs.grobharat.in &&
           cd /mjssite &&
-          git pull origin develop &&
+          git pull origin develop 
+          # &&
           # Add any additional deployment commands here
           # composer install --no-dev &&
           # php artisan migrate --force
