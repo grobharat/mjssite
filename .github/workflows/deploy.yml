@@ -21,9 +21,9 @@ jobs:
     - name: Deploy to server
       run: |
         ssh -o StrictHostKeyChecking=no -p 65002 u691645598@82.180.143.213 "
-          cd /domains &&
-          cd /mjs.grobharat.in &&
-          cd /mjssite &&
+          cd domains &&
+          cd mjs.grobharat.in &&
+          cd mjssite &&
           git pull origin develop 
           # &&
           # Add any additional deployment commands here
