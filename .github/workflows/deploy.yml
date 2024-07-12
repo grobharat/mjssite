@@ -1,0 +1,33 @@
+name: Deploy to Server
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Setup SSH
+      uses: webfactory/ssh-agent@v0.5.4
+      with:
+        ssh-private-key: ${{ secrets.MJS_SSH_PRIVATE_KEY }}
+
+    - name: Deploy to server
+      run: |
+        ssh -o StrictHostKeyChecking=no -p 65002 u691645598@82.180.143.213 "
+          cd domains &&
+          cd mjs.grobharat.in &&
+          # cd mjssite &&
+          git pull origin develop &&
+          rsync -r public public_html
+          # &&
+          # Add any additional deployment commands here
+          # composer install --no-dev &&
+          php artisan migrate --force
+        "
