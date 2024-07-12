@@ -14,7 +14,7 @@ Route::get('/products', function () {
     return view('website/pages/products');
 });
 Route::get('/portfolio', function () {
-    return view('website/pages/portfolio');
+    return view('website/pages/test');
 });
 
 //------------auth Module--------//
