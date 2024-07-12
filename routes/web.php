@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-use App\Modules\auth\Controllers\AuthController as auth;
+use App\Modules\Auth\Controllers\AuthController as auth;
 //------------Website Module--------//
 Route::get('/', function () {
     return view('website/pages/home');
