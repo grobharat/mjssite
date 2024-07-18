@@ -75,38 +75,38 @@
 
       <div class="col-lg-4 col-md-6 content-item">
         <span>01</span>
-        <h4>Lorem Ipsum</h4>
-        <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>
+        <h4>CCTV Camera</h4>
+        <p>A CCTV Camera system has become a vita necessity in this modern world while selecting your preferred security system the essential components you need to give importance to for consistent service are Camera,Monitor,cable,Video,recoders, and data storage.</p>
       </div>
 
       <div class="col-lg-4 col-md-6 content-item">
         <span>02</span>
-        <h4>Repellat Nihil</h4>
-        <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest</p>
+        <h4>Products</h4>
+        <p>Products content is, simply the text, imagery, and other information that a brand or retailer provides to describe its offering. This includes products names price, dimension, description and anything else that futher helps consumers to understand the items they are viewing.</p>
       </div>
 
       <div class="col-lg-4 col-md-6 content-item">
         <span>03</span>
-        <h4> Ad ad velit qui</h4>
-        <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
+        <h4> Farmer</h4>
+        <p>Farmer are the backbone of our society. They are the ones who provide us all the food that we eat . As the country depends upon farmers. Be it the smallest or the largest country.</p>
       </div>
 
       <div class="col-lg-4 col-md-6 content-item">
         <span>04</span>
-        <h4>Repellendus molestiae</h4>
+        <h4>MJS</h4>
         <p>Inventore quo sint a sint rerum. Distinctio blanditiis deserunt quod soluta quod nam mider lando casa</p>
       </div>
 
       <div class="col-lg-4 col-md-6 content-item">
         <span>05</span>
-        <h4>Sapiente Magnam</h4>
-        <p>Vitae dolorem in deleniti ipsum omnis tempore voluptatem. Qui possimus est repellendus est quibusdam</p>
+        <h4>Gallery</h4>
+        <p>The Gallery content type is a way of displaying images in a uniform manner. A Gallery can be added to the main content area of your website or to the content below main section ,(See a sample of a Gallery in the main content area below, and below that a Gallery in the content below main section).</p>
       </div>
 
       <div class="col-lg-4 col-md-6 content-item">
         <span>06</span>
-        <h4>Facilis Impedit</h4>
-        <p>Quis eum numquam veniam ea voluptatibus voluptas. Excepturi aut nostrum repudiandae voluptatibus corporis sequi</p>
+        <h4>Kechuwa Bachao Dharti Bachao</h4>
+        <p>Kuchuwa Bachao dharti bachao abhiyan is a mitiative to raise awareness for protecting Mother Earth. DBA launched mass awareness compgain about environmental issues like tree plantation ,ensure water and energy conservation ,try to shift to renewable energy promote organic farming with farmers and strenthen PRI's for better implements of schemes.</p>
       </div>
 
     </div>
