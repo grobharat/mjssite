@@ -8,20 +8,27 @@
 @section('content')
 <form class="form-signin">
       <a href="{{url('/')}}"><img class="mb-4" src="{{url('logo.jpg')}}" alt="" width="72" height="72"></a>
-      <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+      <h1 class="h3 mb-3 font-weight-normal">Login</h1>
+      <div style="margin-bottom: 10px;">
       <label for="inputEmail" class="sr-only">Email address</label>
       <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+      </div>
+      <div>
       <label for="inputPassword" class="sr-only">Password</label>
       <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-      <div class="checkbox mb-3">
+      </div>
+      
+      <div class="checkbox mb-1">
         <label>
           <input type="checkbox" value="remember-me"> Remember me
         </label>
       </div>
-      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+      <button class="btn btn-lg btn-primary btn-block mb-2" type="submit">Sign in</button>
+      <p>Don't have an account? <a href="{{url('/register')}}">Sign up</p></a>
       <p class="mt-5 mb-3 text-muted">&copy; 2010-<?php echo date("Y"); ?>
       </p>
     </form>
+      
 @endsection
 
 
