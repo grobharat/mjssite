@@ -2,7 +2,8 @@
 // app/Modules/Auth/Controllers/AuthController.php
 
 namespace App\Modules\Auth\Controllers;
-
+use Illuminate\Support\Facades\Hash;
+use App\Models\User;
 use App\Http\Controllers\Controller;
 use App\Modules\Auth\Services\AuthService;
 use Illuminate\Http\Request;
@@ -16,24 +17,41 @@ class AuthController extends Controller
         $this->authService = $authService;
     }
 
-    public function registerview()
-    {
-        return view('auth/pages/register');
-    }
-
-    public function register(Request $request)
-    {
-        $request->validate([
-            'name' => 'required|string|max:255',
-            'email' => 'required|string|email|max:255|unique:users',
-            'password' => 'required|string|min:8',
-        ]);
-
-        $user = $this->authService->register($request->all());
-
-        return response()->json(['message' => 'User registered successfully']);
-    }
-
+    // public function registerview()
+    // {
+    //     return view('auth/pages/register');
+    // }
+    
+        public function showRegistrationForm()
+        {
+            return view('auth.pages.register');
+        }
+    
+        public function register(Request $request)
+        {
+            
+           
+            $request->validate([
+                'name' => 'required|string|max:255',
+                'email' => 'required|string|email|max:255|unique:users',
+                'password' => 'required|string|min:8|confirmed',
+                'password_confirmation' => 'required_with:password|same:password|min:8'
+            ]);
+           
+            User::create([
+                'name' => $request->name,
+                'email' => $request->email,
+                'password' => Hash::make($request->password),
+                
+            ]);
+          
+        // Redirect to login page with success message
+           return redirect()->route('login')->with('success', 'User registered successfully. Please login.');
+          
+           //return response()->json(['message' => 'User registered successfully']);
+            
+        }
+           
     public function loginview()
     {
         return view('auth/pages/login');
